@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+
+        android:id="@+id/pullToRefresh"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        tools:context=".VideoList">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/videoList"
+            tools:listitem="@android:layout/simple_expandable_list_item_2" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
